@@ -7,6 +7,7 @@
 
 export USER_NAME=$(bashio::config 'user_name')
 export ACCESS_TOKEN=$(bashio::config 'access_token')
+export $(bashio::config 'access_token_envvar')=$(bashio::config 'access_token')
 export INSTANCE_NAME=$(bashio::config 'instance_name')
 export LOG_LEVEL=$(bashio::config 'log_level')
 export SCRAPE_INTERVAL=$(bashio::config 'scrape_interval')

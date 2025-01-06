@@ -10,11 +10,13 @@ options:
   instance_name: homeassistant
   user_name: null
   access_token: null
+  access_token_envvar: GCLOUD_RW_API_KEY
   scrape_interval: 60s
   log_level: info
 schema:
   user_name: str
   access_token: str
+  access_token_envvar: str?
   instance_name: str?
   scrape_interval: str?
   log_level: list(debug|info|warn|error)
